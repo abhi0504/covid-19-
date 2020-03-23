@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const https = require('https');
 
 const app = express();
 
@@ -13,7 +14,16 @@ app.use(express.static("public"));
 
 app.get("/" , function(req , res)
 {
-  res.sendFile(__dirname + "/index.html")
+  https.get("https://covid19.mathdro.id/api/" , function(response)
+{
+  response.on("data" , function(data)
+{
+  const apidata = JSON.parse(data);
+  console.log(apidata);
+})
+})
+
+  res.render("layout")
 });
 
 app.listen(3000, function() {

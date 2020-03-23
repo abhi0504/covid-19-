@@ -1,5 +1,36 @@
-h1{
-  background-color: blue;
-  color: green;
+.starter{
+  background-color: grey;
+  color: white;
+  margin: 20px 20px;
+  padding: 20px 20px;
+}
 
+body{
+text-align: center;
+}
+
+section{
+
+    margin-right: 0px;
+  padding: 10px;
+}
+
+div{
+  margin: 25px 25px;
+  display: inline-block;
+}
+
+p{
+  font-size: 2rem;
+}
+
+.cards{
+    transition: 0.8s;
+    display: inline-block;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    box-shadow: 10px 5px 5px red;
 }
