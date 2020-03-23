@@ -2,8 +2,7 @@
 
 <h1 class="starter">COVID-19 GLOBAL STATISTICS</h1>
 
-<section class="row" style ="margin-left: 220px;">
-
+<section class="row container" style ="margin-left: 220px; margin-right: 220px;">
   <div class="cards text-white bg-warning mb-3 col-lg-4" style="max-width: 18rem;">
     <div class="card-body">
       <h3 class="card-title">INFECTED</h3>
@@ -25,8 +24,14 @@
 
 </section>
 
-<section>
-
+<section class = "container">
+  <div class="form-group">
+    <form class="item" action="/" method="post">
+      <label for="">Enter Country Name</label>
+      <input type="text" name="country">
+      <button class="btn btn-primary" type="submit">submit</button>
+    </form>
+  </div>
 </section>
 
 <%- include("footer")  -%>

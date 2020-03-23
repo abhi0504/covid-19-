@@ -28,14 +28,17 @@ app.get("/" , function(req , res)
       const deaths = apidata.deaths.value;
       const treated = apidata.recovered.value;
       const infected = apidata.confirmed.value;
+
       res.render("layout" , { deaths:deaths , treated:treated , infected:infected})
   })
   });
+
+
 });
 
 app.post("/" , function(req , res)
 {
-
+  var country = req.body.country;
 })
 
 
