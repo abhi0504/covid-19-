@@ -39,6 +39,8 @@ app.get("/" , function(req , res)
 app.post("/" , function(req , res)
 {
   var country = req.body.country;
+
+  res.redirect("https://thevirustracker.com/free-api?countryTotal=" + country)
 })
 
 
